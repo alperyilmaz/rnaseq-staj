@@ -6,7 +6,7 @@ then you can run snakemake. please change the `annotation` file for your own ana
 
 ## using aegea for aws launch
 
-the code below launches a spot instance at AWS (instance c6a.8xlarge, 32cpu 64GB ram) with spot price of 0.65 and with 250GB root disk
+the code below launches a spot instance at AWS (instance c6a.8xlarge, 32cpu 64GB ram) with spot price of 0.65 and with 250GB root disk (please refer to [this page](https://instances.vantage.sh/) for pricing details.)
 
 ```bash
 aegea launch  staj --ubuntu-linux-ami --spot-price 0.65 --instance-type c6a.8xlarge --storage /=250GB
