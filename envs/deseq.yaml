@@ -1,0 +1,8 @@
+channels:
+- bioconda
+- conda-forge
+dependencies:
+- bioconductor-deseq2
+- r-ashr
+- r-rcolorbrewer
+- r-gplots
