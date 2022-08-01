@@ -74,12 +74,12 @@ rule starmap:
          STAR --genomeDir dmel_6_star_index \
            --runThreadN {threads} \
            --readFilesIn {input.r1} {input.r2} \
-           #--readFilesCommand zcat \
            --outFileNamePrefix {wildcards.sample}_ \
            --outSAMtype BAM SortedByCoordinate \
            --outSAMunmapped Within \
            --outSAMattributes Standard \
-           --quantMode GeneCounts
+           --quantMode GeneCounts \
+           #--readFilesCommand zcat
          """
 
 rule extractcounts:
