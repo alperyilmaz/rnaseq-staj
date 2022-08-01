@@ -7,7 +7,7 @@
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
 chmod 755 Mambaforge-Linux-x86_64.sh
 ./Mambaforge-Linux-x86_64.sh -b
-source .bashrc
+source ~/.bashrc
 mamba install -c bioconda -c conda-forge  snakemake-minimal
 mamba install pandas
 rm Mambaforge-Linux-x86_64.sh
