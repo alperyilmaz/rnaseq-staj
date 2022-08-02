@@ -13,7 +13,9 @@ rule all:
     input:
         "heatmap2.png",
         expand("{sample}_genecounts",sample=SAMPLES),
-        expand("{sample}_Aligned.sortedByCoord.out.bam", sample=SAMPLES)
+        expand("{sample}_Aligned.sortedByCoord.out.bam", sample=SAMPLES),
+        expand("fastqdump/{sample}_1_fastqc.html", sample=SAMPLES)
+
 
 rule prepare_genome:
     output: 
