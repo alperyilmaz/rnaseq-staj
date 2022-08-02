@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 sample_table    = pd.read_table('annotation', sep='\t', lineterminator='\n')
 
 sample_table.rename( columns={'Unnamed: 0':'SampleName'}, inplace=True )
