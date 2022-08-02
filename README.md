@@ -19,3 +19,10 @@ aegea launch  staj --ubuntu-linux-ami --spot-price 0.65 --instance-type c6a.8xla
 ```
 
 then you can ssh into the machine simply with `aegea ssh staj`
+
+## using snakemake at TRUBA
+
+no need to change the Snakefile, just have the `truba.json` file and run the snakemake as follows:
+```
+snakemake --use-conda -j 99 --cluster-config truba.json --cluster "sbatch -A {cluster.account} -p {cluster.partition} -n {cluster.n} -t{cluster.time} --export=PATH"
+```

@@ -1,0 +1,10 @@
+{
+    "__default__" :
+    {
+        "account" : "USERNAME",
+        "time" : "4:00:00",
+        "n" : 80, 
+        "partition" : "barbun",
+        "constraint": "barbun"
+    }
+}

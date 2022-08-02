@@ -14,3 +14,6 @@ aegea ssh staj
 
 Aug 01 22:03:21 ..... started mapping
 Aug 01 22:21:29 ..... finished mapping (28M paired end reads)
+
+# truba
+snakemake --use-conda -j 99 --cluster-config truba.json --cluster "sbatch -A {cluster.account} -p {cluster.partition} -n {cluster.n} -t{cluster.time} --export=PATH"
