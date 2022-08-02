@@ -1,0 +1,16 @@
+aegea launch  staj2 --ubuntu-linux-ami --spot-price 0.35 --instance-type c6a.4xlarge --storage /=128GB
+aegea launch  staj --ubuntu-linux-ami --spot-price 0.65 --instance-type c6gn.8xlarge --storage /=250GB  #arm64?
+aegea launch  staj --ubuntu-linux-ami --spot-price 0.65 --instance-type c6a.8xlarge --storage /=250GB  #32cpu 64GB ram
+aegea ssh staj
+
+# timing info
+[Mon Aug  1 21:48:38 2022] start fasterq-dump
+[Mon Aug  1 22:01:38 2022] finish fasterq-dump (28M)
+
+-rw-rw-r--  1 alper alper  12G Aug  1 22:01 SRR19415691_1.fastq  #28M
+-rw-rw-r--  1 alper alper  12G Aug  1 22:01 SRR19415691_2.fastq
+-rw-rw-r--  1 alper alper 8.7G Aug  1 21:58 SRR19415694_1.fastq  #20M
+-rw-rw-r--  1 alper alper 8.7G Aug  1 21:58 SRR19415694_2.fastq
+
+Aug 01 22:03:21 ..... started mapping
+Aug 01 22:21:29 ..... finished mapping (28M paired end reads)
